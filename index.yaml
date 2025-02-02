@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ecodms:
+  - apiVersion: v2
+    appVersion: 22.08-01
+    created: "2025-02-02T09:46:07.610489+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 94e6d1ca03bedb7c254c99871ad74bf7993d9c1c2f7b41d1f75b067496a31ae1
+    name: ecodms
+    type: application
+    urls:
+    - ecodms-0.3.4.tgz
+    version: 0.3.4
+generated: "2025-02-02T09:46:07.609805+01:00"
