@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'charts/*.tgz'  # Läuft nur, wenn sich neue Charts im Ordner befinden
+      - '.github/**'
 
 permissions:
   contents: write
@@ -26,7 +27,7 @@ jobs:
           helm repo index --url https://anlatana.github.io/helmcharts/ charts/
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add index.yaml
+          git add .
           git commit -m "🔄 Updated Helm Index"
           git push
 
