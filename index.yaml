@@ -3,9 +3,9 @@ entries:
   ecodms:
   - apiVersion: v2
     appVersion: 22.08-01
-    created: "2025-02-02T10:27:29.556486895Z"
+    created: "2025-02-02T16:14:39.631896851Z"
     description: A Helm chart for Kubernetes
-    digest: 549d9fbffa76bd0c210ce9fb1f9edb08cc6ce08244ebbe0437dc9a9c803a728b
+    digest: 928b31b37fb8567860759204d631dd48a9e15ce70fd4c44cd089466fe21f7d5c
     name: ecodms
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.3.6
   - apiVersion: v2
     appVersion: 22.08-01
-    created: "2025-02-02T10:27:29.556339579Z"
+    created: "2025-02-02T16:14:39.631736011Z"
     description: A Helm chart for Kubernetes
     digest: 043e025e46bb762eecf9557ce2ebe7783b123e91679a820391be2de0dacece4c
     name: ecodms
@@ -23,7 +23,7 @@ entries:
     version: 0.3.5
   - apiVersion: v2
     appVersion: 22.08-01
-    created: "2025-02-02T10:27:29.556162018Z"
+    created: "2025-02-02T16:14:39.631585691Z"
     description: A Helm chart for Kubernetes
     digest: 94e6d1ca03bedb7c254c99871ad74bf7993d9c1c2f7b41d1f75b067496a31ae1
     name: ecodms
@@ -31,4 +31,4 @@ entries:
     urls:
     - https://anlatana.github.io/helmcharts/ecodms-0.3.4.tgz
     version: 0.3.4
-generated: "2025-02-02T10:27:29.555871004Z"
+generated: "2025-02-02T16:14:39.631257259Z"
