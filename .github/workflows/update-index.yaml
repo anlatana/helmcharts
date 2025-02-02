@@ -1,0 +1,32 @@
+name: Update Helm Index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'charts/*.tgz'  # Läuft nur, wenn sich neue Charts im Ordner befinden
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 🛠️ Install Helm
+        run: |
+          curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
+      - name: 🔄 Update Helm Index
+        run: |
+          helm repo index --url https://anlatana.github.io/helm-repo/ charts/
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add index.yaml
+          git commit -m "🔄 Updated Helm Index"
+          git push
+
